@@ -1,0 +1,235 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  background-color: #67686f;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 40rem;
+  overflow-y: scroll;
+  /* border: 2px solid red; */
+}
+
+.nav1 input,
+.nav2 input {
+  outline-style: none;
+  border: none;
+  height: 100%;
+  width: 93%;
+}
+.nav1 {
+  position: fixed;
+  top: 1rem;
+  z-index: 10;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border:1px solid red; */
+  height: 4rem;
+}
+.nav1 > .account,
+.nav2 > .account {
+  /* border: 1px solid red; */
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  margin-left: 2rem;
+}
+.topBox > h2 {
+  margin: 2rem 0;
+  text-align: center;
+}
+.nav1 > .search,
+.nav2 > .search {
+  /* background-color: red; */
+  width: 40%;
+  /* border: 1px solid black; */
+  height: 2.2rem;
+  margin: 0 0 0 7%;
+  background-color: #454469;
+}
+.nav1 > .search > input,
+.nav2 > .search > input {
+  padding-left: 0.5rem;
+  box-sizing: border-box;
+  color: #9796ab;
+  background-color: #454469;
+}
+.nav1 > .logo {
+  /* border: 1px solid teal; */
+  height: 100%;
+  width: 10%;
+}
+.nav2 > .logo {
+  height: 40%;
+  width: 2%;
+  margin-left: 1rem;
+  border-radius: 15%;
+}
+.nav1 > button {
+  width: 8%;
+  height: 2.2rem;
+  border: none;
+  background-color: #1bb76e;
+  border-radius: 2%;
+  font-weight: 700;
+  color: white;
+}
+.nav2 > button {
+  color: grey;
+  font-size: 1.1rem;
+  border: none;
+  background-color: transparent;
+}
+.nav1 > button:nth-child(4) {
+  background-color: #6432f9;
+}
+.nav2 > button:nth-child(4) {
+  background-color: transparent;
+}
+
+.invisible {
+  display: none;
+}
+.displayFlex {
+  display: flex;
+}
+
+.topBox {
+  color: white;
+  /* border: 2px solid teal;     */
+  /* height: 55%; */
+  padding: 3rem 0;
+  background-image: url("https://s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png");
+}
+
+.topBox > .tagsBox > span:nth-child(1) {
+  margin-right: 75%;
+}
+.topBox > .tagsBox {
+  height: 10%;
+  width: 85%;
+  margin: 1rem auto;
+}
+.topBox > .tagsBox > div > div {
+  border: 0.1px solid transparent;
+}
+.topBox > .tagsBox > div {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* height: 11rem; */
+  overflow: hidden;
+  align-items: center;
+}
+
+.topBox > .tagsBox > div > div:nth-child(1) {
+  width: 20%;
+}
+.topBox > .tagsBox > div > div > img {
+  height: 50%;
+  width: 100%;
+}
+.topBox > .tagsBox > div > div {
+  text-align: center;
+  width: 12%;
+  height: 9rem;
+  margin: 0.5rem 0;
+  /* border: 1px solid red; */
+}
+.biggerTagBox {
+  height: 20rem;
+}
+.smallerTagBox {
+  height: 10rem;
+}
+
+.tagcard {
+  font-size: 0.8rem;
+  font-weight: 800;
+  border-radius: 2%;
+}
+.tagcard:hover {
+  transform: translateY(-2px);
+  transition: 0.8s;
+}
+.tagcard > img {
+  margin-bottom: 0.5rem;
+}
+.nav1 > i.fas,
+.nav1 > i.far,
+.nav1 > i.far,
+.nav2 > i.fas {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.nav2 {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 4rem;
+  background-color: #171544;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -2rem;
+}
+.nav2 + div {
+  /* border: 2px solid red; */
+  height: 100rem;
+  width: 70%;
+  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  overflow-y: hidden;
+}
+
+.nav2 + div > div {
+  /* border: 2px solid red; */
+  background-color: #53535a;
+  width: 25%;
+  height: 15%;
+  margin: 0.5rem;
+  border-radius: 2%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.nav2 + div > div > div:nth-child(1) {
+  /* border: 1px solid teal; */
+  height: 70%;
+}
+.nav2 + div > div > p:nth-child(2) {
+  /* border: 1px solid teal; */
+  text-align: center;
+  overflow: hidden;
+  padding: 5%;
+  margin-bottom: 0.2rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+  box-sizing: border-box;
+  height: 20%;
+  background-color: #53535a;
+  color: #ffffff;
+}
+/* .nav2 + div > div > div:nth-child(3) {
+  height: 20%;
+} */
+/* .nav2 + div > div > p:nth-child(2):hover,
+.statsBar:hover {
+  background-color: red;
+} */
+
+.statsBar {
+  /* border: 1px solid teal; */
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #53535a;
+  color: #ffffff;
+  /* height: 10%; */
+  /* align-items: center; */
+}
